@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Textro — Yanfeng Zhao</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Yanfeng Zhao</a>
+    <nav>
+      <a href="../index.html#research" class="active">Research</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../files/cv.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="p-hero">
+    <span class="venue">UIST 2026</span>
+    <h1>Textro</h1>
+    <p class="subtitle">A Prototyping Toolkit for Solderless and Chipless Smart Textile Interfaces</p>
+    <p class="authors-line"><b>Yanfeng Zhao</b>, Te-Yen Wu</p>
+    <!-- Add links when available:
+      <div class="tags"><a href="PDF_URL">Paper (PDF)</a><a href="DOI_URL">DOI</a><a href="VIDEO_URL">Video</a></div>
+    -->
+  </div>
+
+  <figure class="p-media fig" style="margin:0"><img src="../assets/img/textro-hero.jpg" alt="Applications built with Textro: knee support, post-surgery wrap, interactive bag"></figure>
+
+  <section>
+    <p class="eyebrow">Research Question</p>
+    <p class="question">Smart textiles usually need rigid chips, batteries, and soldered joints. Can anyone build a working textile interface using only an embroidery machine, a cutter, and fabric glue?</p>
+    <p class="prose" style="color:var(--muted);margin-top:20px">Textro builds on passive, chipless sensing: textile RLC resonators are read wirelessly through a coil, so the garment needs no batteries or circuit boards. The toolkit covers the whole workflow, from <b>design</b> and <b>fabrication</b> to <b>testing</b>, so makers and designers can prototype without RF or soldering expertise.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">At a glance</p>
+    <div class="stats">
+      <div class="stat"><b>0</b><span>Solder joints or rigid connectors</span></div>
+      <div class="stat"><b>5</b><span>Textile sensor types</span></div>
+      <div class="stat"><b>4</b><span>Application examples</span></div>
+      <div class="stat"><b>15</b><span>Study participants: experts, makers, novices</span></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Core Contributions</p>
+    <div class="contrib" style="margin-top:20px">
+      <figure>
+        <img class="fig" src="../assets/img/textro-c1.jpg" alt="Five textile sensor types with measured ranges">
+        <h4>Predictable textile components</h4>
+        <p>Through empirical study, we optimized embroidered capacitor and inductor designs so they come out with consistent, predictable electrical values, which reliable high-frequency resonance depends on.</p>
+      </figure>
+      <figure>
+        <img class="fig" src="../assets/img/textro-c2.jpg" alt="Capacitive coupling connection via fabric glue, iron-on adhesive, sewing">
+        <h4>Solderless fabrication</h4>
+        <p>Parallel RLC circuits are embroidered as one-stroke continuous paths. Sensors attach with fabric glue and connect through high-frequency capacitive coupling instead of solder.</p>
+      </figure>
+      <figure>
+        <img class="fig" src="../assets/img/textro-c3.jpg" alt="Textro web-based design environment">
+        <h4>Automated design environment</h4>
+        <p>A web tool where users import sewing patterns and place sensors. It generates the component and circuit designs and the machine-ready fabrication files automatically.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="overview">
+    <p class="eyebrow">Workflow</p>
+    <p class="prose" style="color:var(--muted)">(a) Design on a garment pattern. (b) Embroider, cut, and glue. (c) Test with a wireless reader that scans the impedance spectrum and shows real-time sensor signals.</p>
+    <img src="../assets/img/textro-overview.jpg" alt="Textro workflow: design, solderless fabrication, prototype testing">
+    <div class="contrib" style="margin-top:28px;grid-template-columns:1fr 1fr">
+      <figure><img class="fig" src="../assets/img/textro-fab.jpg" alt="Embroidery, cutting, gluing"><figcaption class="cap">Fabrication: embroidery, cutting, and gluing.</figcaption></figure>
+      <figure><img class="fig" src="../assets/img/textro-test.jpg" alt="Reader and real-time signal visualization"><figcaption class="cap">Testing: reader calibration and real-time signals.</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Cite</p>
+    <div class="cite">@inproceedings{zhao2026textro,
+  title     = {Textro: A Prototyping Toolkit for Solderless and Chipless Smart Textile Interfaces},
+  author    = {Zhao, Yanfeng and Wu, Te-Yen},
+  booktitle = {Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26)},
+  year      = {2026}
+}</div>
+  </section>
+
+  <section>
+    <a class="more" href="../index.html#research">← All research</a>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Yanfeng Zhao · Florida State University</div>
+</footer>
+</body>
+</html>

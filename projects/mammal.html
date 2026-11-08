@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mammal — Yanfeng Zhao</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Yanfeng Zhao</a>
+    <nav>
+      <a href="../index.html#research" class="active">Research</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../files/cv.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="p-hero">
+    <span class="venue">IMWUT 2026</span>
+    <h1>Mammal</h1>
+    <p class="subtitle">Supporting Breastfeeding Monitoring Through Computational Garments with Inter-Body Sensing</p>
+    <p class="authors-line"><b>Yanfeng Zhao</b>, Morgan Geck, Kate Fernandez, Madison Nicole Jones, Xia Zhou, Jessica L. Ridgway, Te-Yen Wu</p>
+    <!-- Add links when available:
+      <div class="tags"><a href="PDF_URL">Paper (PDF)</a><a href="DOI_URL">DOI</a><a href="VIDEO_URL">Video</a></div>
+    -->
+  </div>
+
+  <figure class="p-media fig" style="margin:0"><img src="../assets/img/mammal-hero.jpg" alt="Mammal garment with MCU, contact mic and knitted electrode, capturing inter-body ECG and acoustic signals during breastfeeding"></figure>
+
+  <section>
+    <p class="eyebrow">Research Question</p>
+    <p class="question">Breastfeeding is internal and intimate, so it is hard to observe. Can a garment worn by the caregiver measure the infant's feeding and heart activity without putting any sensors on the baby?</p>
+    <p class="prose" style="color:var(--muted);margin-top:20px">Mammal is a computational garment worn by the caregiver. It uses <b>inter-body signal transmission</b>: the infant's ECG and the sounds of sucking and swallowing pass through the natural mouth-to-breast contact and are picked up on the caregiver's body. From these signals, Mammal estimates latch duration, in-feeding heart rate, the suck–swallow–breathe (SSB) ratio, and milk intake.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Results · User study with 8 caregiver–infant dyads</p>
+    <div class="stats">
+      <div class="stat"><b>5.9%</b><span>MAPE, latch duration</span></div>
+      <div class="stat"><b>3.5 bpm</b><span>MAE, infant heart rate</span></div>
+      <div class="stat"><b>0.12</b><span>MAE, SSB ratio</span></div>
+      <div class="stat"><b>14.4%</b><span>Mean relative error, milk intake</span></div>
+    </div>
+    <p class="prose" style="color:var(--muted);margin-top:16px">Participants rated Mammal as comfortable, easy to wear, and compatible with their daily breastfeeding routines.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Core Contributions</p>
+    <div class="contrib" style="margin-top:20px">
+      <figure>
+        <img class="fig" src="../assets/img/mammal-c1.jpg" alt="Inter-body ECG under skin-to-skin and mouth-to-skin contact">
+        <h4>Characterizing inter-body transmission</h4>
+        <p>We studied how electrical and acoustic signals cross mouth-to-breast contact. Mouth-to-skin contact couples more strongly than general skin-to-skin contact, which lets Mammal detect latching.</p>
+      </figure>
+      <figure>
+        <img class="fig" src="../assets/img/mammal-c2.jpg" alt="Breastfeeding postures and garment sensor layout">
+        <h4>Ergonomic nursing garment</h4>
+        <p>A tank-top–style garment, made with fashion designers, that integrates textile electrodes and contact microphones and works across five common breastfeeding postures.</p>
+      </figure>
+      <figure>
+        <img class="fig" src="../assets/img/mammal-c3.jpg" alt="ECG separation pipeline with DWT and NLMS adaptive filter">
+        <h4>Signal separation &amp; event detection</h4>
+        <p>Algorithms that separate the infant's ECG from the mixed inter-body ECG and detect latch, sucking, and swallowing events.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="overview">
+    <p class="eyebrow">System Overview</p>
+    <p class="prose" style="color:var(--muted)">The garment records caregiver ECG, inter-body ECG, and inter-body acoustic signals. Coupling strength gives latch detection. ECG separation recovers the infant's heart rate. Acoustic analysis finds breathing, swallowing, and sucking events, which give the SSB ratio and milk intake.</p>
+    <img src="../assets/img/mammal-overview.jpg" alt="Inter-body signal paths and processing pipeline">
+  </section>
+
+  <section>
+    <p class="eyebrow">Cite</p>
+    <div class="cite">@article{zhao2026mammal,
+  title   = {Mammal: Supporting Breastfeeding Monitoring Through Computational Garments with Inter-Body Sensing},
+  author  = {Zhao, Yanfeng and Geck, Morgan and Fernandez, Kate and Jones, Madison Nicole and Zhou, Xia and Ridgway, Jessica L. and Wu, Te-Yen},
+  journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. (IMWUT)},
+  year    = {2026}
+}</div>
+  </section>
+
+  <section>
+    <a class="more" href="../index.html#research">← All research</a>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Yanfeng Zhao · Florida State University</div>
+</footer>
+</body>
+</html>
